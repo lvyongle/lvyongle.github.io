@@ -4,28 +4,20 @@ layout: home
 
 hero:
   name: "吕永乐的学习笔记"
-  text: "A VitePress Site"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  text: "Note Of Life"
+  tagline: "Life is like riding a bicycle. To keep your balance, you must keep moving. —— Albert Einstein"
+
 
 features:
-  - title: Feature A
+  - title: Markdown教程
+    icon: 
+      dark: /content/markdown/markdown-mark-white.svg
+      light: /content/markdown/markdown-mark-black.svg
+    details: 该教程内容包含课程纵览、基础语法速通、进阶排版、图表与流程图、工具链与AI工作流、实战项目6大章节。
+    link: /content/markdown
+  - title: SpringBoot教程
+    icon: 
+      src: /content/springboot/spring-boot.svg
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /content/springboot
 ---
-

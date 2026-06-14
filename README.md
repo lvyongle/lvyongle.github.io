@@ -25,7 +25,7 @@ export default {
 ```
 npm run docs:build        # 生成 dist
 git add dist && git commit -m "deploy"
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix .vitepress/dist origin gh-pages
 # 百度推送
 curl -H 'Content-Type:text/plain' \
   --data-binary "https://yourdomain.com" \
