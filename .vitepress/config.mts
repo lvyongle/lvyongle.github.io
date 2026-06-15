@@ -2,11 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [['link', { rel: 'icon', href: '/imgs/logo.svg' }]],
   title: "创作家园",
   description: "工作中学习，持续更新...",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/imgs/logo.svg',
+    //页面上方导航栏
     nav: [
       { text: '首页', link: '/' },
       { text: '学习文档', 
@@ -16,7 +18,7 @@ export default defineConfig({
         ]
       }
     ],
-
+    //左边侧边栏目录
     sidebar: {
       '/content/markdown/':[
         {
@@ -49,10 +51,16 @@ export default defineConfig({
            }
       ]
     },
-
+    //显示右上角的友情连接
     socialLinks: [
       // { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
       { icon: 'gitee', link: 'https://gitee.com/lvyongle8848' }
     ],
+    //显示最近更新
+    lastUpdated: true,
+    //浏览器内搜索
+    search: {
+      provider: 'local'
+    }
   }
 })
