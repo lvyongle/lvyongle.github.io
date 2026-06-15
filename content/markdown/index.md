@@ -24,7 +24,7 @@ features:
 # Markdown教程
 
 ### 第1章 课程纵览
-
+    讲解了什么是Markdown,为什么学Markdown,如何完成第一个Markdown文件，以及常用装备
 ### 第2章 基础语法速通
 
 ### 第3章 进阶排版

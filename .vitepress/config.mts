@@ -6,7 +6,7 @@ export default defineConfig({
   description: "工作中学习，持续更新...",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/logo.svg',
+    logo: '/imgs/logo.svg',
     nav: [
       { text: '首页', link: '/' },
       { text: '学习文档', 
@@ -25,7 +25,7 @@ export default defineConfig({
           // collapsed: false,
           items:[
             { text: '第1章 课程纵览', link: '/content/markdown/01' },
-            { text: '第2章 基础语法素通', link: '/content/markdown/02' },
+            { text: '第2章 基础语法速通', link: '/content/markdown/02' },
             { text: '第3章 进阶排版', link: '/content/markdown/03' },
             { text: '第4章 图表与流程图', link: '/content/markdown/04' },
             { text: '第5章 工具链与AI工作流', link: '/content/markdown/05' },
