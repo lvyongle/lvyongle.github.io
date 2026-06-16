@@ -61,6 +61,11 @@ export default defineConfig({
     //浏览器内搜索
     search: {
       provider: 'local'
+    },
+    //页脚
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2026-present 吕永乐'
     }
   }
 })
