@@ -22,4 +22,7 @@ layout: doc
 ### 第5章 工具链与AI工作流
     Typroa1.8新功能，Obsibian插件，VSCode插件，AI提示词模板，持续集成。
 ### 第6章 实战项目
+    1. 项目1：用Markdown写一篇百度喜欢的技术博客
+    2. 项目2：5分钟把README.md做成SEO友好的静态网站
+    3. 项目3：30分钟把微信公众号草稿变成排版精美的Markdown
 
