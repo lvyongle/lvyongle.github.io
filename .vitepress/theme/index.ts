@@ -1,6 +1,15 @@
 
 // .vitepress/theme/index.ts
+import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme'
-import './custom.css' // <--- 关键步骤：引入自定义样式
+import { initComponent } from 'vitepress-plugin-legend/component';
 
-export default DefaultTheme
+import './custom.css' // <--- 关键步骤：引入自定义样式
+import 'vitepress-plugin-legend/dist/index.css';
+
+export default {
+    extends: DefaultTheme,
+    enhanceApp({ app }) {
+        initComponent(app);
+    },
+} satisfies Theme;

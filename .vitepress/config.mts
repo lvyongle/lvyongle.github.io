@@ -1,9 +1,14 @@
 import { defineConfig } from 'vitepress'
+import { vitepressPluginLegend } from 'vitepress-plugin-legend';
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/imgs/logo.svg' }]],
-  title: "创作家园",
+  head: [
+    ['link', { rel: 'icon', href: '/imgs/logo.svg' }],
+    ['link', { rel: 'canonical', href: 'https://xomk.cn' }]
+  ],
+  title: "吕永乐的学习笔记",
   description: "工作中学习，持续更新...",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -64,8 +69,24 @@ export default defineConfig({
     },
     //页脚
     footer: {
-      message: 'Released under the MIT License.',
+      // message: 'Released under the MIT License.',
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank">您的备案号</a>',
       copyright: 'Copyright © 2026-present 吕永乐'
     }
-  }
+  },
+  markdown: {
+    config(md) {
+      vitepressPluginLegend(md,{
+        markmap: {
+          showToolbar: true,
+          // Other markmap options
+        },
+        mermaid: true, // or false to disable
+        infographic: {
+          showToolbar: false,
+          // Other infographic options
+        },
+      });
+    },
+  },
 })

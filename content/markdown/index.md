@@ -18,6 +18,7 @@ layout: doc
 ### 第4章 图表与流程图
 
     Mermaid语法5分钟上手，流程图/时序图/甘特图，图表在移动端自适应方案。
+    - 新增功能：显示脑图、AntV Infographic
 
 ### 第5章 工具链与AI工作流
     Typroa1.8新功能，Obsibian插件，VSCode插件，AI提示词模板，持续集成。
