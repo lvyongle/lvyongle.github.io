@@ -5,6 +5,7 @@ import { vitepressPluginLegend } from 'vitepress-plugin-legend';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [
+    ['meta', { rel: 'keywords', content: 'Markdown,教程,' }],
     ['link', { rel: 'icon', href: '/imgs/logo.svg' }],
     ['link', { rel: 'canonical', href: 'https://xomk.cn' }]
   ],
@@ -37,6 +38,16 @@ export default defineConfig({
             { text: '第4章 图表与流程图', link: '/content/markdown/04' },
             { text: '第5章 工具链与AI工作流', link: '/content/markdown/05' },
             { text: '第6章 实战项目', link: '/content/markdown/06' },
+            {
+              text: '实战记录',
+              // link:'/content/markdown/06',
+              collapsed:true,
+              items:[
+                { text: '20260618-vitepress使用mermaid', link: '/content/markdown/combat/20260618-vitepress使用mermaid' },
+                { text: '20260618-vitepress自定义组件', link: '/content/markdown/01' },
+                { text: '20260618-vitepress自定义样式', link: '/content/markdown/01' },
+              ]
+            }
           ]
         }
       ],
@@ -83,7 +94,7 @@ export default defineConfig({
         },
         mermaid: true, // or false to disable
         infographic: {
-          showToolbar: false,
+          showToolbar: true,
           // Other infographic options
         },
       });
