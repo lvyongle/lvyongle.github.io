@@ -11,6 +11,7 @@ export default defineConfig({
   ],
   title: "吕永乐的学习笔记",
   description: "工作中学习，持续更新...",
+  ignoreDeadLinks: true, // 禁用死链接检查
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/imgs/logo.svg',
@@ -43,9 +44,9 @@ export default defineConfig({
               // link:'/content/markdown/06',
               collapsed:true,
               items:[
-                { text: '20260618-vitepress使用mermaid', link: '/content/markdown/combat/20260618-vitepress使用mermaid' },
-                { text: '20260618-vitepress自定义组件', link: '/content/markdown/01' },
-                { text: '20260618-vitepress自定义样式', link: '/content/markdown/01' },
+                { text: 'vitepress使用mermaid', link: '/content/markdown/combat/20260618' },
+                // { text: '20260618-vitepress自定义组件', link: '/content/markdown/01' },
+                // { text: '20260618-vitepress自定义样式', link: '/content/markdown/01' },
               ]
             }
           ]
