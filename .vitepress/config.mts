@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { vitepressPluginLegend } from 'vitepress-plugin-legend';
+import sidebarJSON from './theme/data/siderbar.json'
+import navigationJSON from './theme/data/navigation.json'
 
 
 // https://vitepress.dev/reference/site-config
@@ -16,58 +18,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/imgs/logo.svg',
     //页面上方导航栏
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '学习文档', 
-        items:[
-          { text: 'Markdown教程', link: '/content/markdown' },
-          { text: 'Springboot教程', link: '/content/springboot' }
-        ]
-      }
-    ],
+    nav: navigationJSON,
     //左边侧边栏目录
-    sidebar: {
-      '/content/markdown/':[
-        {
-          text: 'Markdown教程',
-          link: '/content/markdown',
-          // collapsed: false,
-          items:[
-            { text: '第1章 课程纵览', link: '/content/markdown/01' },
-            { text: '第2章 基础语法速通', link: '/content/markdown/02' },
-            { text: '第3章 进阶排版', link: '/content/markdown/03' },
-            { text: '第4章 图表与流程图', link: '/content/markdown/04' },
-            { text: '第5章 工具链与AI工作流', link: '/content/markdown/05' },
-            { text: '第6章 实战项目', link: '/content/markdown/06' },
-            {
-              text: '实战记录',
-              // link:'/content/markdown/06',
-              collapsed:true,
-              items:[
-                { text: 'vitepress使用mermaid', link: '/content/markdown/combat/20260618' },
-                // { text: '20260618-vitepress自定义组件', link: '/content/markdown/01' },
-                // { text: '20260618-vitepress自定义样式', link: '/content/markdown/01' },
-              ]
-            }
-          ]
-        }
-      ],
-      '/content/springboot/':[
-          { 
-            text: 'SpringBoot入门学习',
-            link: '/content/springboot',
-            // collapsed: false,
-            items:[
-              { text: '第1章 课程纵览', link: '/content/springboot/01' },
-              { text: '第2章 基础语法素通', link: '/content/springboot/02' },
-              { text: '第3章 进阶排版', link: '/content/springboot/03' },
-              { text: '第4章 图表与流程图', link: '/content/springboot/04' },
-              { text: '第5章 工具链与AI工作流', link: '/content/springboot/05' },
-              { text: '第6章 实战项目', link: '/content/springboot/06' },
-            ]
-           }
-      ]
-    },
+    sidebar:sidebarJSON,
     //显示右上角的友情连接
     socialLinks: [
       // { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
@@ -82,7 +35,7 @@ export default defineConfig({
     //页脚
     footer: {
       // message: 'Released under the MIT License.',
-      message: '<a href="https://beian.miit.gov.cn/" target="_blank">您的备案号</a>',
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank">备案号:京ICP备2024043921号-3</a>',
       copyright: 'Copyright © 2026-present 吕永乐'
     }
   },
@@ -100,5 +53,6 @@ export default defineConfig({
         },
       });
     },
+    lineNumbers:true
   },
 })

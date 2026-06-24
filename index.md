@@ -14,10 +14,16 @@ features:
       dark: /imgs/markdown/markdown-mark-white.svg
       light: /imgs/markdown/markdown-mark-black.svg
     details: 该教程内容包含课程纵览、基础语法速通、进阶排版、图表与流程图、工具链与AI工作流、实战项目6大章节。
-    link: /content/markdown
+    link: /pages/markdown
+  - title: Docker教程
+    icon:
+      dark: /imgs/docker/docker-white.svg
+      light: /imgs/docker/docker-black.svg
+    details: 该教程内容包含课程纵览、基础语法速通、进阶排版、图表与流程图、工具链与AI工作流、实战项目6大章节。
+    link: /pages/docker
   - title: SpringBoot教程
     icon: 
       src: /imgs/springboot/spring-boot.svg
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /content/springboot
+    link: /pages/springboot
 ---
