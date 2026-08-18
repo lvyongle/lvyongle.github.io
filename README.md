@@ -31,3 +31,12 @@ curl -H 'Content-Type:text/plain' \
   --data-binary "https://yourdomain.com" \
   "http://data.zz.baidu.com/urls?site=yourdomain&token=YOUR_TOKEN"
 ```
+
+4. github:gh-pages部署
+```shell
+npm run build
+git add .
+git commit -m "***"
+git subtree
+git subtree push   --prefix .vitepress/dist github gh-pages
+```
