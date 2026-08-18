@@ -1,0 +1,18 @@
+[
+  { "text": "首页", "link": "/" },
+  { "text": "学习文档",
+    "items":[
+      { "text": "Markdown教程", "link": "/pages/markdown" },
+      { "text": "Springboot教程", "link": "/pages/springboot" },
+      { "text": "Docker教程", "link": "/pages/docker" },
+      { "text": "linux教程", "link": "/pages/linux" }
+
+    ]
+  },
+  {
+    "text": "笔记",
+    "items":[
+      { "text": "读书笔记", "link": "/pages/reading" }
+    ]
+  }
+]
