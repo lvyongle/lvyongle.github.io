@@ -26,4 +26,9 @@ features:
       src: /imgs/springboot/spring-boot.svg
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
     link: /pages/springboot
+  - title: linux教程
+    icon:
+      src: /imgs/linux/linuxttb.jpg
+    details: linux教程
+    link: /pages/linux
 ---

@@ -1,5 +1,5 @@
 .idea
 node_modules
-.vitepress/
+.vitepress
 !.vitepress/theme
 !.vitepress/config.mts
