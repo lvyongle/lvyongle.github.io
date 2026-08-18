@@ -1,9 +1,0 @@
-.VPFooter {
-    /*height: 36px; !* 根据实际字体大小调整，通常与一行文本高度一致 *!*/
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.VPFooter .container {
-    flex-wrap: nowrap !important; /* 防止内部元素换行 */
-}
