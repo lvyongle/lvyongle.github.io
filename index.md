@@ -31,4 +31,10 @@ features:
       src: /imgs/linux/linuxttb.jpg
     details: linux教程
     link: /pages/linux
+    
+  - title: trae教程
+    icon:
+        src: /imgs/trae/img.png
+    details: 该教程内容包含初识Trae IDE、Trae 项目构建与功能了解、Trae 项目实战
+    link: /pages/trae
 ---

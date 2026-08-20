@@ -60,6 +60,19 @@
         { "text": "script：脚本记录", "link": "/pages/linux/combat/20260701" }
       ]
     }
+  ],
+  "/pages/trae/": [
+    {
+      "text": "Trae IDE快速入门",
+      "collapsed":true,
+      "items":[
+        { "text": "第1章 初识Trae IDE", "link": "/pages/trae/01/01" },
+        { "text": "第2章 Trae 项目构建与功能了解", "link": "/pages/trae/01/02" },
+        { "text": "第3章 Trae 项目实战", "link": "/pages/trae/01/03" }
+      ]
+    }
+
+
   ]
 
 }
