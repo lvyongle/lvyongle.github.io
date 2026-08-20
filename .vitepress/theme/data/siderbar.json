@@ -64,15 +64,24 @@
   "/pages/trae/": [
     {
       "text": "Trae IDE快速入门",
+      "link": "/pages/trae/01",
       "collapsed":true,
       "items":[
         { "text": "第1章 初识Trae IDE", "link": "/pages/trae/01/01" },
         { "text": "第2章 Trae 项目构建与功能了解", "link": "/pages/trae/01/02" },
         { "text": "第3章 Trae 项目实战", "link": "/pages/trae/01/03" }
       ]
+    },
+    {
+      "text": "Trae构建springboot项目",
+      "link": "/pages/trae/02",
+      "collapsed":true,
+      "items":[
+        { "text": "第1章 项目环境搭建", "link": "/pages/trae/02/01" },
+        { "text": "第2章 项目脚本编写", "link": "/pages/trae/02/02" },
+        { "text": "第3章 代码生成", "link": "/pages/trae/02/03" }
+      ]
     }
-
-
   ]
 
 }
